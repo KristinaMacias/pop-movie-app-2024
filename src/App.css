@@ -1,0 +1,51 @@
+/* MediaList Component */
+section {
+  padding: 20px;
+}
+
+#movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* MediaCard Component */
+.card {
+  color: white;
+  width: 300px; 
+  opacity: 0.7;
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.card:hover {
+  opacity: 1;
+  transform: scale(1.01);
+}
+
+.movie-image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 10px); /* Adjust for two-column layout with spacing */
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 100%; /* Adjust for single column layout */
+  }
+}
+
+/* General Body Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
